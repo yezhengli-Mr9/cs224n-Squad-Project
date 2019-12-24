@@ -92,7 +92,7 @@ def maybe_download(url, filename, prefix, num_bytes=None):
     the contents and returns the filename.
     num_bytes=None disables the file size check."""
     local_filename = None
-    print('maybe_download os.path.exists(os.path.join(prefix, filename))', os.path.join(prefix, filename), os.path.exists(os.path.join(prefix, filename)))
+    print('[maybe_download] os.path.exists(os.path.join(prefix, filename))', os.path.join(prefix, filename), os.path.exists(os.path.join(prefix, filename)))
     if not os.path.exists(os.path.join(prefix, filename)):
         try:
             print ("Downloading file {}...".format(url + filename))
