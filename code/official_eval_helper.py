@@ -334,7 +334,7 @@ def generate_answers_prob(session, model, word2id, qn_uuid_data, context_token_d
         batch_num += 1
 
         if batch_num % 10 == 0:
-            print "Generated answers for %i/%i batches = %.2f%%" % (batch_num, num_batches, batch_num*100.0/num_batches)
+            print ("Generated answers for %i/%i batches = %.2f%%" % (batch_num, num_batches, batch_num*100.0/num_batches))
 
     print ("Finished generating answers for dataset.")
 
